@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Holds all metadata about the page-->
+<head>
+    <title>Contact page</title>
+
+    <!-- Creates relationship "style sheet" between page and file "style.css"-->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="logo3.png"/>
+</head>
+
+<!-- Creates the body where content will be held -->
+<body>
+
+    <!-- Creates division of which our header will be held-->
+    <header class="navigationHeader">
+
+        <!-- Istantiates the navigation bar-->
+        <nav class="navbar">
+            <a href="index.html"> Home</a>
+            <a href="register.html"> Register</a>
+            <a href="schedule.html"> Schedule</a>
+            <a href="speakers.html"> Speakers</a>
+            <a href="contact.html"> Contact</a>
+        </nav>
+    </header>
+
+    <!-- Creates a division of which our main content will be held-->
+    <div class="Main">
+        <div class="Header">
+            <h1>Need support with TechCon 2023? </h1>
+        </div>
+
+            <!-- Creates another division of which the contact form is held-->
+        <div class="formType"> 
+            
+                <h1>What can we help with?</h1>
+
+                <!-- Creates a form-->
+                <form>
+
+                    <!-- Creates all our inputs, specifics their input types, and assigns them their IDs-->
+                    <input type="text" name="fullName" placeholder="Full Name">
+                    <input type="text" name="emailAddress" placeholder="Email Address">
+                    <textarea type="text" name="usersMessage" id="message" rows="8" placeholder="Your message..."></textarea>
+                    <br>
+                   
+                    <!-- Creates input, of type submit, which calls the "checkValidForm" function-->
+                    <div class="registerButton">
+                        <button type="submit">Sign up here!</button>       
+                    </div>
+
+                    <h2 style="color: #fff;" id="contactH2">More contact information</h2>
+                    <p style="color: #fff;">Email: techcon2023@gmail.com</p>
+                    <p style="color: #fff;">Phone: 01000101</p>
+                                                  
+                </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

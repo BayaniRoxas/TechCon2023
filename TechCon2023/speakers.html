@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Holds all metadata about the page-->
+<head>
+    <title>Speakers page</title>
+
+    <!-- Creates relationship "style sheet" between page and file "style.css"-->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="logo3.png"/>
+</head>
+
+<!-- Creates the body where content will be held -->
+<body>
+
+    <!-- Creates link between this page and js file "registerCode.js"-->  
+    <script src="registerCode.js"></script>
+
+    <header class="navigationHeader">
+
+        <!-- Istantiates the navigation bar-->
+        <nav class="navbar">
+            <a href="index.html"> Home</a>
+            <a href="register.html"> Register</a>
+            <a href="schedule.html"> Schedule</a>
+            <a href="speakers.html"> Speakers</a>
+            <a href="contact.html"> Contact</a>
+        </nav>
+    </header>
+
+    <!-- Block of code that stores the popups for the extendend information of the speakers-->
+    <!-- More information on Bill Gates-->
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="testContent">
+
+            <!-- Assigns the close button to the corresponding function which de/actives the overlay-->
+            <div class="close-btn" onclick="togglePopup1()">&times; 
+            </div>
+            <h1>More on Bill Gates</h1>
+            <p>
+                Bill Gates, born on October 28, 1955, co-founded Microsoft and is a prominent philanthropist. 
+                His influence extends from shaping the tech industry to addressing global issues through the Bill & Melinda Gates Foundation,
+                focusing on health and education.
+            </p>
+        </div>
+    </div>
+
+    <!-- More information on Mark Zuckerberg-->
+    <div class="popup" id="popup-2">
+        <div class="overlay"></div>
+        <div class="testContent">
+
+            <!-- Assigns the close button to the corresponding function which de/actives the overlay-->
+            <div class="close-btn" onclick="togglePopup2()">&times; 
+            </div>
+            <h1>More on Mark Zuckerberg</h1>
+            <p>
+                Mark Zuckerberg, born on May 14, 1984, is the co-founder and CEO of Facebook, a social media platform that revolutionized online connectivity.
+                Zuckerberg has played a central role in shaping the digital landscape. 
+                Beyond Facebook, he has been involved in various philanthropic initiatives,
+                including the Chan Zuckerberg Initiative.
+            </p>
+        </div>
+    </div>
+
+    <!-- More information on Zizek Slavoj-->
+    <div class="popup" id="popup-3">
+        <div class="overlay"></div>
+        <div class="testContent">
+
+            <!-- Assigns the close button to the corresponding function which de/actives the overlay-->
+            <div class="close-btn" onclick="togglePopup3()">&times; 
+            </div>
+            <h1>More on Slavoj zizek</h1>
+            <p>
+                Slavoj Žižek, born March 21, 1949, is a Slovenian philosopher and cultural critic known for his 
+                provocative work blending critical theory, Marxism, and psychoanalysis. 
+                His unique perspective and prolific writings have positioned him as a 
+                leading figure in discussions on ideology, politics, and society.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Creates a division of which the main content will be held-->
+    <div class="Main">
+
+        <!-- Creates a sub division of which our header will be held-->
+        <div class="Header">
+            <h1>Introducing our 2023 speakers!  </h1>
+            <h3>Click their names to learn more!</h3>
+        </div>
+
+        <!-- Creates a sub division of which our content will be held-->
+        <div class="ContentSpeakers">
+
+            <!-- Creates a sub division of which our speakers content will be held at-->
+            <div id="boxTypeOne">
+
+                <!-- Assigns the open button to the corresponding function which de/actives the overlay-->
+                
+                <button class="button" onclick="togglePopup1()"> Bill Gates  </button>
+                <img src="Bill_Gates_2018.jpg" alt="Bill gates" class="imageClass">
+                
+                <h4>About Bill gates</h4>
+                <p>
+                    Bill Gates is one of Americas most successful business magnate. He is famously known for 
+                    co-founding Microsoft. Here at Techcon 2023 Bill Gates will hold a talk about the business
+                    and economic side of the technological industry.
+                </p>
+            </div>
+        
+            <div id="boxTypeOne">
+
+                <!-- Assigns the close button to the corresponding function which de/actives the overlay-->
+                <button onclick="togglePopup2()"> Mark Zuckerberg  </button>
+                <img src="Mark_Zuckerberg.jpg" alt="Bill gates" class="imageClass">
+                <h4>About Mark Zuckerberg</h4>
+                <p>
+                    Mark Zuckerberg is argubably one of the most successful programmers. He is famously known for
+                    founding, and intially programming facebook! Facebook know also owns and is apart of companies 
+                    such as instagram and meta. Mark Zuckerberg will be talking about the issues of data security
+                    in social media
+                </p>
+            </div>
+
+            <div id="boxTypeOne">
+
+                <!-- Assigns the close button to the corresponding function which de/actives the overlay-->
+                <button onclick="togglePopup3()"> Slavoj Žižek</button>
+                <img src="zizek.jpg" alt="Bill gates" class="imageClass">
+                <h4>About Slavoj Žižek</h4>
+                <p>
+                    Slavoj Žižek is the modern Diognes. He is a succesful philospher and here at techcon 2023 
+                    he will be talking about the philosphical and ethical issues with our technological advancement of
+                    AI
+                </p>
+            </div>
+        </div>
+</body>
+</html>

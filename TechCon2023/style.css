@@ -1,0 +1,421 @@
+/* Overall CSS */
+
+body{
+
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url("pexels-drew-williams-3568520.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* Overall style CSS */
+/* pseudo classes and  */
+
+/* Creates the style for class "main" */
+.Main {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    padding-top: 10px;   
+}
+
+/* Creates the class ".Header", the following properties are applied to all items*/
+.Header {
+    background-color: transparent;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* All headers under the class ".Header" are given these properties*/
+.Header h1, h2, h3{
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #009688;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+
+
+/* Creates style for class content */
+.Content {
+    grid-template-columns: auto ;
+    display: grid;
+}
+
+/* Creates style for ID boxTypeOne */
+#boxTypeOne {  
+    margin-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* Assigns the following style to h3, h4, within ID boxTypeOne */
+#boxTypeOne h3, h4{
+    color: #fff;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+/* Assigns the following style to p, within ID boxTypeOne */
+#boxTypeOne p{
+    padding-top: 20px;
+    color: #fff;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+/* Creates style for all buttons contained within division w/ ID buttonBox*/
+/* Registration button */
+.registerButton button{
+    transform: translateX(50%);
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;    
+    transition: 300ms;
+}
+
+.registerButton button:hover{
+    transition: 300ms;
+    background-color: #009688;
+}
+.registerButton button:active {
+    background-color: #006e63   ;
+}
+
+/* Opening button */
+#homeButton button{
+    transform: translateX(320%);
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;    
+    transition: 300ms;
+}
+
+#homeButton button:hover{
+    transition: 300ms;
+    background-color: #009688;
+}
+
+#homeButton button:active {
+    background-color: #006e63   ;
+}
+
+
+/* SPEAKERS BUTTON */
+
+#boxTypeOne button{
+    transition: 300ms;
+    transform: translateX(65%);
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    
+    background: transparent;
+    color: #fff;
+    cursor: pointer;    
+}
+
+#boxTypeOne button:hover{
+    transition: 300ms;
+    background-color: #009688;
+}
+
+#boxTypeOne button:active {
+    background-color: #006e63   ;
+}
+
+/* Exclusive code to speakers page */
+/* Creates a style for class ".ContentSpeakers" */
+.ContentSpeakers{
+    display: grid;
+    grid-template-columns: auto auto auto; /* Creates a grid that has three columns*/
+}
+
+/* Adjusts images so that they are centered and have a set display and pixel*/
+.imageClass {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 300px;
+  }
+
+/* Registration form and contact form */
+/* Creates a form type of which we can gather user data*/
+.formType{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+/* Creates a selector for the users gender*/
+.genderSelector{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 40px;
+}
+
+/* Creates style for all h1 in ".formType"*/
+.formType h1{
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+/* Creates style for all h2 in ".formType"*/
+.formType h2{
+    text-align: center;
+    color: #fff;
+}
+
+/* Creates style for all p in ".formType"*/
+.formType p{
+    margin-left: 45px;
+    font-size: 20px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+/* Creates style for all input in ".formType"*/
+.formType input{
+    margin-left: 45px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 15px 10px;
+    width: 70%;
+    
+}
+
+/* Creates style for all textarea in ".formType"*/
+.formType textarea{
+    margin-left: 45px;
+    font-size: 16px;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+/* Navigation bar*/
+/* Creates a navigation header bar*/
+.navigationHeader{
+   
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+
+    
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  
+}
+
+
+/* Creates the style of all headers for the different website */
+.navbar a{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+     
+    color: #fff;
+    font-style: bold;
+    
+    text-transform: uppercase;
+    text-decoration:none;
+    position: relative;
+
+}
+
+/* Creates the style of what should appear when hovered over*/
+.navbar a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+/* Extends the previous style for everyone to see*/
+.navbar a:hover::after{
+    width: 100px;
+}
+
+/* SCHEDULE CODE */
+
+
+.table-sortable .th-sort-asc::after {
+	content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+	content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+	margin-left: 5px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+	background: rgba(0, 0, 0, 0.1);
+}
+/* Creates the style for our class of table*/
+.table-sortable {
+    border: solid;
+    border-collapse: collapse;
+   
+    font-size: 0.9em;
+    min-width: 400px;
+    
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Creates the style for our tables head*/
+.table-sortable thead tr {
+    border-radius: 25px;
+    background-color: #009688;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Creates the style for our table head and table data*/
+.table-sortable th,
+.table-sortable td {
+    padding: 12px 15px;
+    cursor: pointer;
+    
+}
+
+.table-sortable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table-sortable tbody tr {
+    background-color: #f3f3f3;
+}
+
+.table-sortable tbody tr:last-of-type {
+    border-bottom: 2px solid seagreen;
+}
+
+.table-sortable tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+    border-radius: 25px;
+}
+
+/* STYLE FOR POP UPS */
+/* Assigns white to paragraphs, and headers*/
+.popup p, h1{
+    color: #fff;
+}
+
+/* Creates the style for the overlay*/
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vw;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+
+/* Creates the box for content*/
+.popup .testContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #2C2F33;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: #009688;
+    border-style: solid;   
+}
+
+/* Creates style for the close button  */
+.popup .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    background-color: #009688;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* Blocks display when the popup is active */
+.popup.active .overlay{
+    backdrop-filter: blur(10px);
+    display: block;
+}
+
+/* Creates the transition for the pop up to appear*/
+.popup.active .testContent{
+    transition: all 300ms ease-in;
+    transform: translate(-50%, -50%);
+
+}

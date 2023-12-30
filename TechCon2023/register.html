@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Holds all metadata about the page-->
+<head>
+    <title>Register page</title>
+
+    <!-- Creates relationship "style sheet" between page and file "style.css"-->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="logo3.png"/>
+</head>
+
+<!-- Creates the body where content will be held -->
+<body>
+
+    <!-- Links the js file "registerCode.js" to this page-->
+    <script src="registerCode.js"></script>
+
+    <!-- Creates division of which our navigation header will be held-->
+    <header class="navigationHeader">
+        <div>
+
+            <!-- Istantiates the navigation bar-->
+            <nav class="navbar">
+                <a href="index.html"> Home</a>
+                <a href="register.html"> Register</a>
+                <a href="schedule.html"> Schedule</a>
+                <a href="speakers.html"> Speakers</a>
+                <a href="contact.html"> Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Creates a division of which our main content will be held-->
+    <div class="Main">
+
+        <!-- Creates a division of which our header will be held-->
+        <div class="Header">
+            <h1>Register to TechCon 2023! </h1>
+        </div>
+
+         <!-- Block of code dealing with regristration form-->
+        <div class="formType" >
+            <h1>Register here!</h1>
+            
+            <!-- Creates our form -->
+            <form>
+
+                <!-- Creates all our inputs, specifics their input types, and assigns them their IDs-->
+                <!-- Also uses HTMLs built in function to ensure the right data is put in-->
+                <!-- Also signifies whether or not it is a requried piece of data-->
+                <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+                <input type="email" name="emailAddress" id="emailAddress" placeholder="Email Address" required>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required> 
+                <input type="number" id="age" name="age" placeholder="Age" required> 
+                <h2>Gender</h2>
+
+                <!-- Date of birth selector-->
+                <select id="gender" name="gender" class="genderSelector" required>
+                    <option value=""> Gender</option>
+                    <option value="male"> Male</option>
+                    <option value="female"> Female</option>
+                    <option value="preferNotToSay"> Prefer not to say</option>
+                </select>
+
+                <br>
+                
+                <!-- Creates input, of type submit, which calls the "checkValidForm" function-->
+                <!-- Creates input, of type submit, which calls the "checkValidForm" function-->
+                 <div class="registerButton">
+                    <button type="submit">Sign up here!</button>       
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

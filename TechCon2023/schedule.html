@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Holds all metadata about the page-->
+<head>
+    <title>Schedule page</title>
+
+    <!-- Creates relationship "style sheet" between page and file "style.css"-->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="logo3.png"/>
+</head>
+
+<!-- Creates the body where content will be held -->
+<body>
+    
+    <!-- Creates division where our navigation header will be held--> 
+    <header class="navigationHeader">
+        <div>
+            <!-- Istantiates the navigation bar-->
+            <nav class="navbar">
+                <a href="index.html"> Home</a>
+                <a href="register.html"> Register</a>
+                <a href="schedule.html"> Schedule</a>
+                <a href="speakers.html"> Speakers</a>
+                <a href="contact.html"> Contact</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- Creates a division of which our main content will be held-->
+    <div class="Main">
+        
+        <!-- Creates a division of which our header will be held-->
+        <div class="Header">
+            <h1>Our techcon 2023 schedule </h1>
+            <h3>Click on the table headers to filter!</h3>
+        </div>
+
+        <!-- Creates a division of which our table will be held in -->
+        <div>
+
+            <!-- Creates table-->
+            <table class="table-sortable"> 
+
+                <!-- Creates our table header-->
+                <thead>
+
+                    <!-- Creates a table row, with the table heads Day, Speaker, Topic, Times-->
+                    <tr>
+                        <th>Day</th>
+                        <th>Speaker</th>
+                        <th>Topic</th>
+                        <th>Times</th>
+                    </tr>
+                </thead>
+
+                <!-- Creates division for the tables body (where actual content is held)-->
+                <tbody>
+
+                    <!-- Row for Bill Gates-->
+                    <tr>
+                        <td>Monday</td>
+                        <td>Bill Gates</td>
+                        <td>The economics of the technology industry</td>
+                        <td>1200pm to 1300pm</td>    
+                    </tr>
+
+                    <!-- Row for Mark Zuckerberg-->
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Mark Zuckerberg</td>
+                        <td>The issues with data security</td>
+                        <td>0800am to 1200pm</td>
+                    </tr>
+
+                    <!-- Row for Slavoj Zizek-->
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Slavoj zizek</td>
+                        <td>The philosphy and ethics of AI</td>
+                        <td>0900am to 1000am</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--- Links this page to the js file "tableSort.js"-->
+    <script src="tableSort.js"></script>
+</body>
+</html>
